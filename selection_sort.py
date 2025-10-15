@@ -8,7 +8,7 @@ print("Intial value:", values)
 max_value = 0
 for i in range(len(values) - 1):
     min_value = i
-    for j in range(i - 1, ):
+    for j in range(i + 1, ):
 
         if j < min_value:
             min_value = j
