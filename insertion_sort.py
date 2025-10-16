@@ -1,4 +1,4 @@
-
+#import random
 import random
 
 # generate a list of 10 random numbers from -100 to 100
@@ -10,6 +10,7 @@ print("Unsorted values =", numbers)
 def insertion_sort(values):
 #
     for i in range(1, len(values)):
+        #stores values of i inside of temp file so it can be used later
         temp = values[i]
         j = i - 1
         while j >= 0 and temp < values[j]:
