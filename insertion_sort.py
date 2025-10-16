@@ -2,22 +2,21 @@
 import random
 
 # generate a list of 10 random numbers from -100 to 100
-values = [random.randint(0, 10) for i in range(10)]
-print(f"Initial Values = {values}")
-
-    def insertion_sort(values):
-        for i in range(len(values) - 1):
-            temp = values[i]
-            j = i - 1
-            while i <
-                j -= 1
+numbers = [random.randint(0, 10) for i in range(10)]
+# displays values before sort
+print("Unsorted values =", numbers)
 
 
+def insertion_sort(values):
+#
+    for i in range(1, len(values)):
+        temp = values[i]
+        j = i - 1
+        while j >= 0 and temp < values[j]:
+            values[j+1] = values[j]
+            j -= 1
+            values[j+1] = temp
     return values
 
 
-# as long as i is < j
-#     and j > 0
-#         move all j to the right
-# temp
-# for as long as i < the length of the list
+print("Sorted values =", insertion_sort(numbers))
