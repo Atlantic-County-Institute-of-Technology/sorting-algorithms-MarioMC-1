@@ -6,13 +6,13 @@ numbers = [random.randint(0,10) for i in range(10)]
 print("Intial value:", numbers)
 
 
-def selectionsort(values):
+def selection_sort(values):
+    for i in range(len(numbers)):
+        temp = i
+        for j in range(i + 1, len(numbers)):
+            if numbers[j] < numbers[temp]:
+                temp = j
+        numbers[i], numbers[temp] = numbers[temp], numbers[i]
+    return numbers
 
-    for i in range(len(values) - 1):
-        for j in range(i + 1, ):
-
-            if j < i:
-
-
-
-print("Sorted values =", selectionsort(numbers))
+print("Sorted values =", selection_sort(numbers))

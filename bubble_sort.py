@@ -2,18 +2,19 @@
 import random
 
 # generate a list of 10 random numbers from -100 to 100
-values = [random.randint(0, 10) for i in range(10)]
-print(f"Initial Values = {values}")
+numbers = [random.randint(0, 10) for i in range(10)]
+print(f"Initial Values = {numbers}")
 
 
 
 # perform the bubblesort
-for i in range(len(values) - 1):
+def bubble_sort(values):
+    for i in range(len(values) - 1):
 
-    for j in range(len(values) -i -1):
+        for j in range(len(values) -i -1):
 
-        if values[j] > values[j+1]:
-            values[j], values[j+1] = values[j+1], values[j]
+            if values[j] > values[j+1]:
+                values[j], values[j+1] = values[j+1], values[j]
+    return values
 
-
-print(f"Sorted Values = {values}")
+print("Sorted values =", bubble_sort(numbers))

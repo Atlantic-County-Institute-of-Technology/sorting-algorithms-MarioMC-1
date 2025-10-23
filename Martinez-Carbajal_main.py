@@ -1,16 +1,32 @@
-# This is a sample Python script.
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from bubble_sort import bubble_sort
 
+from insertion_sort import insertion_sort
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from selection_sort import selection_sort
+# [-]
+print(input(" [-] こんにちは \n Please begin simulation"))
+os.system('cls' if os.name == 'nt' else 'clear')
+# temp_numbers = str(numbers)
 
+min_numbers = int(input("[-] What is the lowest value you want?"))
+max_numbers = int(input("[-] What is the highest value you want?"))
+amo_numbers = int(input("[-] How many numbers you want to see?"))
+def main()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    selection_1 = 0
+    selection_2 = 0
+    shown = 0
+    menu = 0
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    while True:
+        global amo_numbers
+        os.system('cls' if os.name == 'nt' else 'clear')
+
+        print("[-] 0. Exit: \n"
+              "[-] 1. Renter Numbers: \n"
+              "[-] 2. Select Which Sort:")
+
+        selection_1 = int(input("[-] Insert Number:"))
+
