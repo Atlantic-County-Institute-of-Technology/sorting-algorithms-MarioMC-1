@@ -1,12 +1,12 @@
 
 import random
 
-numbers = [random.randint(0,10) for i in range(10)]
+# numbers = [random.randint(0,10) for i in range(10)]
 
-print("Intial value:", numbers)
+# print("Intial value:", numbers)
 
 
-def selection_sort(values):
+def selection_sort(numbers):
     for i in range(len(numbers)):
         temp = i
         for j in range(i + 1, len(numbers)):
@@ -15,4 +15,4 @@ def selection_sort(values):
         numbers[i], numbers[temp] = numbers[temp], numbers[i]
     return numbers
 
-print("Sorted values =", selection_sort(numbers))
+# print("Sorted values =", selection_sort(numbers))
